@@ -7,7 +7,7 @@
 <body>
 <h2>近藤光について</h2>
 <h3>基本情報</h3>
-<p>性別：男<br>
+<p id="typo">性別：男<br>
     年齢：19歳<br>
     趣味：ゲーム、ラーメン屋巡り<br>
     <img src="ramen_boy.png" width="100" alt="ラーメン画像"><img src="game_friends_income.png" width="100" alt="ゲーム画像">
@@ -22,5 +22,14 @@
 <h3>一言</h3>
 <p>のらりくらり生きています。<br>
 よろしくお願いします。</p>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+$(function(){
+    $('#typo').css("opacity","0");
+    $('#typo').animate({
+        opacity: 1
+    },3000);
+})
+</script>
 </body>
 </html>
