@@ -25,13 +25,14 @@
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
 $(function(){
-    $('#typo').css("opacity","0");
-    $('#typo').animate({
+    $('p').css("opacity","0");
+    $('ul').css("opacity","0");
+    $('p').animate({
         opacity: 1
-    },3000);
-    $('li').on('mouseover',function(){
-        $('li').stop(true).animate({fontSize: '2rem'},500)
-    })
+    },5000);
+    $('ul').animate({
+        opacity: 1
+    },5000);
 })
 </script>
 </body>
