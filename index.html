@@ -7,32 +7,38 @@
 <body>
 <h2>近藤光について</h2>
 <h3>基本情報</h3>
-<p id="typo">性別：男<br>
+<p id="kihon">岩手県出身<br>性別：男<br>
     年齢：19歳<br>
     趣味：ゲーム、ラーメン屋巡り<br>
-    <img src="ramen_boy.png" width="100" alt="ラーメン画像"><img src="game_friends_income.png" width="100" alt="ゲーム画像">
+        中学、高校は卓球部に所属していました。<br>
+        <img src="game_friends_income.png" width="100" alt="ゲーム画像"><img src="ramen_boy.png" width="100" alt="ラーメン画像">
+        <img src="takkyu_tabletennis_man.png" width="100" alt="卓球画像">
 </p>
 <h3>経歴</h3>
-<ul>
+<ul id="kei">
     <li>盛岡市立仁王小学校卒業</li>
     <li>盛岡市立上田中学校卒業</li>
     <li>岩手県立盛岡第四高等学校卒業</li>
 </ul>
 <h3>一言</h3>
-<p>のらりくらり生きています。<br>
+<p id="hito">のらりくらり生きています。<br>
 よろしくお願いします。</p>
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
 $(function(){
-    $('p').css("opacity","0");
-    $('ul').css("opacity","0");
-    $('p').animate({
+    $('#kihon').css("opacity","0");
+    $('#kei').css("opacity","0");
+    $('#hito').css("opacity","0");
+    $('#kihon').animate({
         opacity: 1
     },5000);
-    $('ul').animate({
+    $('#kei').animate({
         opacity: 1
     },5000);
-})
+    $('#hito').animate({
+        opacity: 1
+    },5000);
+});
 </script>
 </body>
 </html>
