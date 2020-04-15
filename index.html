@@ -29,6 +29,9 @@ $(function(){
     $('#typo').animate({
         opacity: 1
     },3000);
+    $('li').on('mouseover',function(){
+        $('li').stop(true).animate({fontSize: '2rem'},500)
+    })
 })
 </script>
 </body>
